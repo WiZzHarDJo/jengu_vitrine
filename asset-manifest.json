@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "./static/css/main.126c14d6.chunk.css",
-    "main.js": "./static/js/main.36aec3c7.chunk.js",
-    "main.js.map": "./static/js/main.36aec3c7.chunk.js.map",
+    "main.js": "./static/js/main.28579df1.chunk.js",
+    "main.js.map": "./static/js/main.28579df1.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.a4162b78.js",
     "runtime-main.js.map": "./static/js/runtime-main.a4162b78.js.map",
-    "static/js/2.76c92954.chunk.js": "./static/js/2.76c92954.chunk.js",
-    "static/js/2.76c92954.chunk.js.map": "./static/js/2.76c92954.chunk.js.map",
+    "static/js/2.9933c33a.chunk.js": "./static/js/2.9933c33a.chunk.js",
+    "static/js/2.9933c33a.chunk.js.map": "./static/js/2.9933c33a.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.bc04fcd5d585fe893433af6d9e6b137b.js": "./precache-manifest.bc04fcd5d585fe893433af6d9e6b137b.js",
+    "precache-manifest.9d804bca0e659b82f8d915b8a92cd05a.js": "./precache-manifest.9d804bca0e659b82f8d915b8a92cd05a.js",
     "service-worker.js": "./service-worker.js",
     "static/css/main.126c14d6.chunk.css.map": "./static/css/main.126c14d6.chunk.css.map",
-    "static/js/2.76c92954.chunk.js.LICENSE.txt": "./static/js/2.76c92954.chunk.js.LICENSE.txt",
+    "static/js/2.9933c33a.chunk.js.LICENSE.txt": "./static/js/2.9933c33a.chunk.js.LICENSE.txt",
     "static/media/avatar.jpg": "./static/media/avatar.f1d71f77.jpg",
     "static/media/bg.jpg": "./static/media/bg.e5241971.jpg",
     "static/media/bg2.jpg": "./static/media/bg2.84378183.jpg",
@@ -23,10 +23,10 @@
     "static/media/clem-onojeghuo.jpg": "./static/media/clem-onojeghuo.216ef03c.jpg",
     "static/media/cynthia-del-rio.jpg": "./static/media/cynthia-del-rio.9813593c.jpg",
     "static/media/kendall.jpg": "./static/media/kendall.e0508cc9.jpg",
-    "static/media/landing-bg.jpg": "./static/media/landing-bg.df8fd3ef.jpg",
     "static/media/landing.jpg": "./static/media/landing.08e18cb9.jpg",
     "static/media/mariya-georgieva.jpg": "./static/media/mariya-georgieva.4575c40b.jpg",
     "static/media/olu-eletu.jpg": "./static/media/olu-eletu.4112cbc1.jpg",
+    "static/media/pharma.jpg": "./static/media/pharma.285f1c3e.jpg",
     "static/media/profile-bg.jpg": "./static/media/profile-bg.baf6b40a.jpg",
     "static/media/profile.jpg": "./static/media/profile.090a5aab.jpg",
     "static/media/sign.jpg": "./static/media/sign.cf8b686b.jpg",
@@ -38,8 +38,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.a4162b78.js",
-    "static/js/2.76c92954.chunk.js",
+    "static/js/2.9933c33a.chunk.js",
     "static/css/main.126c14d6.chunk.css",
-    "static/js/main.36aec3c7.chunk.js"
+    "static/js/main.28579df1.chunk.js"
   ]
 }
