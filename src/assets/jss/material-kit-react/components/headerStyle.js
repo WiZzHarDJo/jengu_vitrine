@@ -64,6 +64,19 @@ const headerStyle = {
       color: "inherit",
       background: "transparent"
     }
+  },  brand: {
+    ...defaultFont,
+    lineHeight: "30px",
+    fontSize: "30px",
+    borderRadius: "3px",
+    textTransform: "none",
+    color: "inherit",
+    padding: "8px 16px",
+    letterSpacing: "unset",
+    "&:hover,&:focus": {
+      color: "inherit",
+      background: "transparent"
+    }
   },
   appResponsive: {
     margin: "20px 10px"

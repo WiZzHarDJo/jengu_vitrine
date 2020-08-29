@@ -3,9 +3,9 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
 // @material-ui/icons
-import Chat from "@material-ui/icons/Chat";
-import VerifiedUser from "@material-ui/icons/VerifiedUser";
-import Fingerprint from "@material-ui/icons/Fingerprint";
+import Explore from "@material-ui/icons/Explore";
+import ImportantDevices from "@material-ui/icons/ImportantDevices";
+import NewReleases from "@material-ui/icons/NewReleases";
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
@@ -21,41 +21,39 @@ export default function ProductSection() {
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={8}>
-          <h2 className={classes.title}>Let{"'"}s talk product</h2>
-          <h5 className={classes.description}>
-            This is the paragraph where you can write more details about your
-            product. Keep you user engaged by providing meaningful information.
-            Remember that by this time, the user is curious, otherwise he wouldn
-            {"'"}t scroll to get here. Add a button if you want the user to see
-            more.
-          </h5>
+          <h2 className={classes.title}>Notre projet</h2>
         </GridItem>
+        <h5 className={classes.description}>
+            Jengu est une plateforme qui a pour but de faire gagner du temps aux étudiants et jeunes diplômés en médecine dans leur recherches d'emplois.
+            Cela en facilitant le processus de recrutement pour les officines en leur apportant une visibilité améliorée. Tout en s'appuyant sur des outils technologiques,
+            offrant un service personnalisé via de multiples critères pour répondre à chacune de vos attentes.
+          </h5>
       </GridContainer>
       <div>
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Free Chat"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={Chat}
+              title="Formateur"
+              description="Nous souhaitons vous proposer des formations variées afin d’enrichir vos connaissances officinales."
+              icon={Explore}
               iconColor="info"
               vertical
             />
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Verified Users"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={VerifiedUser}
+              title="Intuitif"
+              description="Une interface simple, agréable et facile d'utilisation pensée pour mettre en relation facilement les étudiants avec les officines."
+              icon={ImportantDevices}
               iconColor="success"
               vertical
             />
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Fingerprint"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={Fingerprint}
+              title="Impliqué"
+              description="Dernières actualités pharmaceutiques à portée de main."
+              icon={NewReleases}
               iconColor="danger"
               vertical
             />

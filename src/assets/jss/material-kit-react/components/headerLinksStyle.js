@@ -41,7 +41,7 @@ const headerLinksStyle = theme => ({
     position: "relative",
     padding: "0.9375rem",
     fontWeight: "400",
-    fontSize: "12px",
+    fontSize: "18px",
     textTransform: "uppercase",
     borderRadius: "3px",
     lineHeight: "20px",
@@ -91,8 +91,8 @@ const headerLinksStyle = theme => ({
     backgroundColor: "rgba(255, 255, 255, 0.1)"
   },
   icons: {
-    width: "20px",
-    height: "20px",
+    width: "35px",
+    height: "35px",
     marginRight: "3px"
   },
   socialIcons: {

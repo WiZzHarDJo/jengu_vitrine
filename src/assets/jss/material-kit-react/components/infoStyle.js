@@ -54,14 +54,14 @@ const infoStyle = {
     color: grayColor,
     overflow: "hidden",
     marginTop: "0px",
-    fontSize: "14px"
+    fontSize: "20px"
   },
   iconWrapperVertical: {
     float: "none"
   },
   iconVertical: {
-    width: "61px",
-    height: "61px"
+    width: "80px",
+    height: "80px"
   }
 };
 
