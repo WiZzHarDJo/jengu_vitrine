@@ -5,7 +5,11 @@ import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
 import Explore from "@material-ui/icons/Explore";
 import ImportantDevices from "@material-ui/icons/ImportantDevices";
-import NewReleases from "@material-ui/icons/NewReleases";
+import MenuBook from "@material-ui/icons/MenuBook";
+import VerifiedUser from "@material-ui/icons/VerifiedUser";
+import Speed from "@material-ui/icons/Speed";
+import Forum from "@material-ui/icons/Forum";
+
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
@@ -24,17 +28,18 @@ export default function ProductSection() {
           <h2 className={classes.title}>Notre projet</h2>
         </GridItem>
         <h5 className={classes.description}>
-            Jengu est une plateforme qui a pour but de faire gagner du temps aux étudiants et jeunes diplômés en médecine dans leur recherches d'emplois.
-            Cela en facilitant le processus de recrutement pour les officines en leur apportant une visibilité améliorée. Tout en s'appuyant sur des outils technologiques,
-            offrant un service personnalisé via de multiples critères pour répondre à chacune de vos attentes.
-          </h5>
+        Jengu est une plateforme innovante qui a pour volonté d'optimiser la recherche d'emploi des étudiants et jeunes diplômés en pharmacie,
+        et permettre aux officines de recruter <b>LE</b> candidat idéal. Jengu vous propose une solution inédite qui passe par un algorithme de correspondance
+        des profils étudiants et officinaux, permettant de vous offrir un service ultra-personnalisé qui correspond à chacune de vos attentes.
+        Jengu est également une plateforme de formation à destination des étudiants et des pharmaciens, car nous souhaitons vous accompagner au quotidien.
+        </h5>
       </GridContainer>
-      <div>
+      <div style={{marginTop:"30px"}}>
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Formateur"
-              description="Nous souhaitons vous proposer des formations variées afin d’enrichir vos connaissances officinales."
+              description="Nous souhaitons vous proposer des formations en ligne variées afin d’enrichir vos connaissances officinales."
               icon={Explore}
               iconColor="info"
               vertical
@@ -43,7 +48,7 @@ export default function ProductSection() {
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Intuitif"
-              description="Une interface simple, agréable et facile d'utilisation pensée pour mettre en relation facilement les étudiants avec les officines."
+              description="Une interface simple et facile d'utilisation : rencontrez vos étudiants ou vos officines depuis votre téléphone !"
               icon={ImportantDevices}
               iconColor="success"
               vertical
@@ -53,8 +58,34 @@ export default function ProductSection() {
             <InfoArea
               title="Impliqué"
               description="Dernières actualités pharmaceutiques à portée de main."
-              icon={NewReleases}
-              iconColor="danger"
+              icon={MenuBook}
+              iconColor="blue"
+              vertical
+            />
+          </GridItem><GridItem xs={12} sm={12} md={4}>
+            <InfoArea
+              title="Profils vérifiés"
+              description="Vérification des coordonnées, des dipômes et de l'identité."
+              icon={VerifiedUser}
+              iconColor="success"
+              vertical
+            />
+          </GridItem>
+          <GridItem xs={12} sm={12} md={4}>
+            <InfoArea
+              title="Offres complètes"
+              description="Publiez en quelques clics une offre complète qui diminue les allez-retours inutiles."
+              icon={Speed}
+              iconColor="blue"
+              vertical
+            />
+          </GridItem>
+          <GridItem xs={12} sm={12} md={4}>
+            <InfoArea
+              title="En direct"
+              description="Mise en relation directe et sans intermédiaire."
+              icon={Forum}
+              iconColor="info"
               vertical
             />
           </GridItem>

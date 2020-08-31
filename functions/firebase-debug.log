@@ -1,0 +1,106 @@
+[debug] [2020-08-31T16:14:56.654Z] ----------------------------------------------------------------------
+[debug] [2020-08-31T16:14:56.656Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\joaqu\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js functions:shell
+[debug] [2020-08-31T16:14:56.656Z] CLI Version:   8.9.2
+[debug] [2020-08-31T16:14:56.656Z] Platform:      win32
+[debug] [2020-08-31T16:14:56.656Z] Node Version:  v10.16.3
+[debug] [2020-08-31T16:14:56.657Z] Time:          Mon Aug 31 2020 18:14:56 GMT+0200 (GMT+02:00)
+[debug] [2020-08-31T16:14:56.657Z] ----------------------------------------------------------------------
+[debug] [2020-08-31T16:14:56.657Z] 
+[debug] [2020-08-31T16:14:56.665Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-08-31T16:14:56.665Z] > authorizing via signed-in user
+[debug] [2020-08-31T16:14:56.666Z] [iam] checking project contactformlisting for permissions ["firebase.projects.get"]
+[debug] [2020-08-31T16:14:56.668Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-08-31T16:14:56.668Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-08-31T16:14:56.754Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 31 Aug 2020 16:14:57 GMT","server":"scaffolding on HTTPServer2","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-08-31T16:14:56.759Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/contactformlisting:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-08-31T16:14:57.441Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 31 Aug 2020 16:14:58 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=630","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-08-31T16:14:59.454Z] [functions] Using node@10 from host.
+[debug] [2020-08-31T16:14:59.455Z] defaultcredentials: writing to file C:\Users\joaqu\AppData\Roaming\firebase\contact_jengu_gmail.com_application_default_credentials.json
+[debug] [2020-08-31T16:14:59.457Z] DEBUG: Setting GAC to C:\Users\joaqu\AppData\Roaming\firebase\contact_jengu_gmail.com_application_default_credentials.json
+[debug] [2020-08-31T16:14:59.463Z] [functions] Watching "C:\Users\joaqu\Desktop\Jengu\jengu-webvitrine\functions" for Cloud Functions...
+[debug] [2020-08-31T16:14:59.804Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-08-31T16:14:59.804Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-08-31T16:14:59.804Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-08-31T16:14:59.804Z] DEBUG: [worker-~diagnostic~-751b8631-2eb0-4946-9a2b-e910a110161c]: Assigning socketPath: \\?\pipe\C:\Users\joaqu\Desktop\Jengu\jengu-webvitrine\functions\22020
+[debug] [2020-08-31T16:14:59.804Z] DEBUG: [worker-~diagnostic~-751b8631-2eb0-4946-9a2b-e910a110161c]: BUSY
+[debug] [2020-08-31T16:15:00.225Z] DEBUG: [runtime-status] [22020] Functions runtime initialized. {"cwd":"C:\\Users\\joaqu\\Desktop\\Jengu\\jengu-webvitrine\\functions","node_version":"10.16.3"}
+[debug] [2020-08-31T16:15:00.226Z] DEBUG: [runtime-status] [22020] Disabled runtime features: undefined
+[debug] [2020-08-31T16:15:00.229Z] DEBUG: [runtime-status] [22020] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"C:\\Users\\joaqu\\Desktop\\Jengu\\jengu-webvitrine\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-08-31T16:15:00.231Z] DEBUG: [runtime-status] [22020] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\joaqu\\Desktop\\Jengu\\jengu-webvitrine\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-08-31T16:15:00.232Z] DEBUG: [runtime-status] [22020] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\joaqu\\Desktop\\Jengu\\jengu-webvitrine\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-08-31T16:15:00.235Z] DEBUG: [runtime-status] [22020] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-08-31T16:15:00.235Z] DEBUG: [runtime-status] [22020] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\joaqu\\Desktop\\Jengu\\jengu-webvitrine\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-08-31T16:15:00.279Z] DEBUG: [runtime-status] [22020] Checked functions.config() {"config":{}}
+[debug] [2020-08-31T16:15:00.279Z] DEBUG: [runtime-status] [22020] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\joaqu\\Desktop\\Jengu\\jengu-webvitrine\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2020-08-31T16:15:00.280Z] DEBUG: [runtime-status] [22020] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\joaqu\\Desktop\\Jengu\\jengu-webvitrine\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-08-31T16:15:00.283Z] DEBUG: [runtime-status] [22020] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"C:\\Users\\joaqu\\Desktop\\Jengu\\jengu-webvitrine\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-08-31T16:15:00.283Z] DEBUG: [runtime-status] [22020] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\joaqu\\Desktop\\Jengu\\jengu-webvitrine\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-08-31T16:15:00.283Z] DEBUG: [runtime-status] [22020] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.13.0","resolution":"C:\\Users\\joaqu\\Desktop\\Jengu\\jengu-webvitrine\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[warn] !  It looks like you're trying to access functions.config().gmail but there is no value there. You can learn more about setting up config here: https://firebase.google.com/docs/functions/local-emulator {"metadata":{"emulator":{"name":"functions"},"message":"It looks like you're trying to access functions.config().gmail but there is no value there. You can learn more about setting up config here: https://firebase.google.com/docs/functions/local-emulator"}}
+[warn] !  TypeError: Cannot read property 'email' of undefined
+    at Object.<anonymous> (C:\Users\joaqu\Desktop\Jengu\jengu-webvitrine\functions\index.js:7:44)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at C:\Users\joaqu\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:681:33
+    at Generator.next (<anonymous>) {"metadata":{"emulator":{"name":"functions"},"message":"TypeError: Cannot read property 'email' of undefined\n    at Object.<anonymous> (C:\\Users\\joaqu\\Desktop\\Jengu\\jengu-webvitrine\\functions\\index.js:7:44)\n    at Module._compile (internal/modules/cjs/loader.js:778:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)\n    at Module.load (internal/modules/cjs/loader.js:653:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:585:3)\n    at Module.require (internal/modules/cjs/loader.js:692:17)\n    at require (internal/modules/cjs/helpers.js:25:18)\n    at C:\\Users\\joaqu\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:681:33\n    at Generator.next (<anonymous>)"}}
+[warn] !  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2020-08-31T16:15:00.348Z] DEBUG: [worker-~diagnostic~-751b8631-2eb0-4946-9a2b-e910a110161c]: exited
+[debug] [2020-08-31T16:15:00.348Z] DEBUG: [worker-~diagnostic~-751b8631-2eb0-4946-9a2b-e910a110161c]: FINISHED
+[debug] [2020-08-31T16:15:51.628Z] ----------------------------------------------------------------------
+[debug] [2020-08-31T16:15:51.630Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\joaqu\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js functions:shell
+[debug] [2020-08-31T16:15:51.630Z] CLI Version:   8.9.2
+[debug] [2020-08-31T16:15:51.630Z] Platform:      win32
+[debug] [2020-08-31T16:15:51.630Z] Node Version:  v10.16.3
+[debug] [2020-08-31T16:15:51.631Z] Time:          Mon Aug 31 2020 18:15:51 GMT+0200 (GMT+02:00)
+[debug] [2020-08-31T16:15:51.631Z] ----------------------------------------------------------------------
+[debug] [2020-08-31T16:15:51.631Z] 
+[debug] [2020-08-31T16:15:51.639Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-08-31T16:15:51.639Z] > authorizing via signed-in user
+[debug] [2020-08-31T16:15:51.640Z] [iam] checking project contactformlisting for permissions ["firebase.projects.get"]
+[debug] [2020-08-31T16:15:51.642Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/contactformlisting:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-08-31T16:15:52.317Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 31 Aug 2020 16:15:52 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=630","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-08-31T16:15:54.327Z] [functions] Using node@10 from host.
+[debug] [2020-08-31T16:15:54.328Z] defaultcredentials: writing to file C:\Users\joaqu\AppData\Roaming\firebase\contact_jengu_gmail.com_application_default_credentials.json
+[debug] [2020-08-31T16:15:54.329Z] DEBUG: Setting GAC to C:\Users\joaqu\AppData\Roaming\firebase\contact_jengu_gmail.com_application_default_credentials.json
+[debug] [2020-08-31T16:15:54.336Z] [functions] Watching "C:\Users\joaqu\Desktop\Jengu\jengu-webvitrine\functions" for Cloud Functions...
+[debug] [2020-08-31T16:15:54.671Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-08-31T16:15:54.671Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-08-31T16:15:54.671Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-08-31T16:15:54.671Z] DEBUG: [worker-~diagnostic~-b5ea31ad-c384-4f15-bf55-a4535d8251d1]: Assigning socketPath: \\?\pipe\C:\Users\joaqu\Desktop\Jengu\jengu-webvitrine\functions\2896
+[debug] [2020-08-31T16:15:54.672Z] DEBUG: [worker-~diagnostic~-b5ea31ad-c384-4f15-bf55-a4535d8251d1]: BUSY
+[debug] [2020-08-31T16:15:55.088Z] DEBUG: [runtime-status] [2896] Functions runtime initialized. {"cwd":"C:\\Users\\joaqu\\Desktop\\Jengu\\jengu-webvitrine\\functions","node_version":"10.16.3"}
+[debug] [2020-08-31T16:15:55.089Z] DEBUG: [runtime-status] [2896] Disabled runtime features: undefined
+[debug] [2020-08-31T16:15:55.092Z] DEBUG: [runtime-status] [2896] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"C:\\Users\\joaqu\\Desktop\\Jengu\\jengu-webvitrine\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-08-31T16:15:55.094Z] DEBUG: [runtime-status] [2896] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\joaqu\\Desktop\\Jengu\\jengu-webvitrine\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-08-31T16:15:55.094Z] DEBUG: [runtime-status] [2896] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\joaqu\\Desktop\\Jengu\\jengu-webvitrine\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-08-31T16:15:55.097Z] DEBUG: [runtime-status] [2896] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-08-31T16:15:55.098Z] DEBUG: [runtime-status] [2896] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\joaqu\\Desktop\\Jengu\\jengu-webvitrine\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-08-31T16:15:55.142Z] DEBUG: [runtime-status] [2896] Checked functions.config() {"config":{}}
+[debug] [2020-08-31T16:15:55.143Z] DEBUG: [runtime-status] [2896] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\joaqu\\Desktop\\Jengu\\jengu-webvitrine\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2020-08-31T16:15:55.143Z] DEBUG: [runtime-status] [2896] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\joaqu\\Desktop\\Jengu\\jengu-webvitrine\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-08-31T16:15:55.144Z] DEBUG: [runtime-status] [2896] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"C:\\Users\\joaqu\\Desktop\\Jengu\\jengu-webvitrine\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-08-31T16:15:55.144Z] DEBUG: [runtime-status] [2896] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\joaqu\\Desktop\\Jengu\\jengu-webvitrine\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-08-31T16:15:55.144Z] DEBUG: [runtime-status] [2896] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.13.0","resolution":"C:\\Users\\joaqu\\Desktop\\Jengu\\jengu-webvitrine\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[warn] !  It looks like you're trying to access functions.config().gmail but there is no value there. You can learn more about setting up config here: https://firebase.google.com/docs/functions/local-emulator {"metadata":{"emulator":{"name":"functions"},"message":"It looks like you're trying to access functions.config().gmail but there is no value there. You can learn more about setting up config here: https://firebase.google.com/docs/functions/local-emulator"}}
+[warn] !  TypeError: Cannot read property 'email' of undefined
+    at Object.<anonymous> (C:\Users\joaqu\Desktop\Jengu\jengu-webvitrine\functions\index.js:7:44)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at C:\Users\joaqu\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:681:33
+    at Generator.next (<anonymous>) {"metadata":{"emulator":{"name":"functions"},"message":"TypeError: Cannot read property 'email' of undefined\n    at Object.<anonymous> (C:\\Users\\joaqu\\Desktop\\Jengu\\jengu-webvitrine\\functions\\index.js:7:44)\n    at Module._compile (internal/modules/cjs/loader.js:778:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)\n    at Module.load (internal/modules/cjs/loader.js:653:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:585:3)\n    at Module.require (internal/modules/cjs/loader.js:692:17)\n    at require (internal/modules/cjs/helpers.js:25:18)\n    at C:\\Users\\joaqu\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:681:33\n    at Generator.next (<anonymous>)"}}
+[warn] !  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2020-08-31T16:15:55.208Z] DEBUG: [worker-~diagnostic~-b5ea31ad-c384-4f15-bf55-a4535d8251d1]: exited
+[debug] [2020-08-31T16:15:55.208Z] DEBUG: [worker-~diagnostic~-b5ea31ad-c384-4f15-bf55-a4535d8251d1]: FINISHED
