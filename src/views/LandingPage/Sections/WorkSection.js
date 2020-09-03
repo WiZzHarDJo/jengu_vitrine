@@ -63,7 +63,7 @@ export default function WorkSection() {
       <GridContainer justify="center">
         <GridItem cs={12} sm={12} md={8}>
           <h2 className={classes.title} id="contact">Contactez-nous</h2>
-          <h4 className={classes.description}>
+          <h4 className={classes.description} >
           Si vous avez une question sur notre projet, souhaitez davantage d’informations ou voulez être tenu au courant de l’actualité de Jengu, n’hésitez pas à renseigner vos coordonnées et à nous envoyer un message.
           </h4>
         </GridItem>

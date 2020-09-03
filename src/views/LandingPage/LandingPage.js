@@ -4,6 +4,11 @@ import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
+import {
+  BrowserView,
+  MobileView
+} from "react-device-detect";
+
 // @material-ui/icons
 
 // core components
@@ -54,6 +59,7 @@ export default function LandingPage(props) {
           </GridContainer>
         </div>
       </Parallax>
+      <BrowserView>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <ProductSection />
@@ -61,6 +67,14 @@ export default function LandingPage(props) {
           <WorkSection />
         </div>
       </div>
+      </BrowserView>
+      <MobileView>
+        <div className={classes.container}>
+          <ProductSection />
+          <TeamSection />
+          <WorkSection />
+        </div>
+      </MobileView>
       <Footer />
     </div>
   );
