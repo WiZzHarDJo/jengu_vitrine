@@ -72,7 +72,7 @@ export default function WorkSection() {
               <SnackbarContent
               message={
                 <span>
-                  <b>SUCCES !:</b> Votre email a bien été envoyé, nous vous répondrons sous peu !
+                  <b>SUCCES ! :</b> Votre email a bien été envoyé, nous vous répondrons sous peu !
                 </span>
               }
               close
