@@ -1,19 +1,24 @@
 import React from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
+import 'antd/dist/antd.css';
 
 // @material-ui/icons
-import Explore from "@material-ui/icons/Explore";
-import ImportantDevices from "@material-ui/icons/ImportantDevices";
-import MenuBook from "@material-ui/icons/MenuBook";
-import VerifiedUser from "@material-ui/icons/VerifiedUser";
-import Speed from "@material-ui/icons/Speed";
-import Forum from "@material-ui/icons/Forum";
+import EventAvailable from "@material-ui/icons/EventAvailable";
+import Map from "@material-ui/icons/Map";
+import Done from "@material-ui/icons/Done";
+
+import {
+  BrowserView,
+  MobileView
+} from "react-device-detect";
 
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-import InfoArea from "components/InfoArea/InfoArea.js";
+import InfoAreaTry from "components/InfoAreaTry/InfoAreaTry.js"
+import InfoArea from "components/InfoArea/InfoArea.js"
+import {Progress, Row, Col} from "antd";
 
 import styles from "assets/jss/material-kit-react/views/landingPageSections/productStyle.js";
 
@@ -25,70 +30,76 @@ export default function ProductSection() {
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={8}>
-          <h2 className={classes.title}>Notre projet</h2>
+          <h2 className={classes.title}>Le recrutement</h2>
         </GridItem>
         <h5 className={classes.description} style={{textAlign: "justify"}}>
-        Jengu est une plateforme innovante qui a pour volonté d'optimiser la recherche d'emploi des étudiants et jeunes diplômés en pharmacie,
-        et permettre aux officines de recruter <b>LE</b> candidat idéal. Jengu vous propose une solution inédite qui passe par un algorithme de correspondance
-        des profils étudiants et officinaux, permettant de vous offrir un service ultra-personnalisé qui correspond à chacune de vos attentes.
-        Jengu est également une plateforme de formation à destination des étudiants et des pharmaciens, car nous souhaitons vous accompagner au quotidien.
+        Jengu gnagngagnaganngagagnagnagnnanagnagagangan
         </h5>
       </GridContainer>
       <div style={{marginTop:"30px"}}>
-        <GridContainer>
-          <GridItem xs={12} sm={12} md={4}>
-            <InfoArea
-              title="Formateur"
-              description="Développez vous au quotidien grâce nos formations en ligne conçues pour tous !"
-              icon={Explore}
-              iconColor="info"
-              vertical
-            />
-          </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
-            <InfoArea
-              title="Intuitif"
-              description="Rencontrez vos étudiants ou vos officines à travers une interface simple et intuitive !"
-              icon={ImportantDevices}
-              iconColor="success"
-              vertical
-            />
-          </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
-            <InfoArea
-              title="Impliqué"
-              description="Soyez toujours à jour avec les dernières actualités pharmaceutiques à portée de main !"
-              icon={MenuBook}
-              iconColor="blue"
-              vertical
-            />
-          </GridItem><GridItem xs={12} sm={12} md={4}>
-            <InfoArea
-              title="Profils vérifiés"
-              description="Croisez des personnes certifiées à l'identité et aux diplômes vérifiés !"
-              icon={VerifiedUser}
-              iconColor="success"
-              vertical
-            />
-          </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
-            <InfoArea
-              title="Offres complètes"
-              description="Publiez en quelques clics vos offres à travers une procédure simplifiée !"
-              icon={Speed}
-              iconColor="blue"
-              vertical
-            />
-          </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
-            <InfoArea
-              title="En direct"
-              description="Discutez sans intermédiaire et immédiatement avec l'étudiant ou l'officine !"
-              icon={Forum}
-              iconColor="info"
-              vertical
-            />
-          </GridItem>
+        <GridContainer justify="center">
+          <BrowserView>
+            <Row
+              type="flex"
+              style={{ alignItems: "center" }}
+              justify="center"
+              gutter={10}
+            >
+              <Col span={12}>
+              <Progress type="circle" percent={75} strokeColor={'red'} width={180} />
+              <p className={classes.description} style={{marginTop: "20px"}}>
+                Selon une étude menée par Jengu sur plus de 300 étudiants en pharmacie, 75% d'entre eux ne connaissent pas de plateformes dédiées au recrutement en officine et désirerait en avoir une.
+              </p>
+              </Col>
+              <Col span={12}>
+                <InfoAreaTry
+                title="Système de Matching"
+                description="Propositions d’annonces pertinentes basées sur vos critères"
+                icon={Done}
+                iconColor="success"
+                />
+                <InfoAreaTry
+                title="Carte interactive"
+                description="Affichage en un clic/instant des offres proches de chez vous"
+                icon={Map}
+                iconColor="info"
+                />
+                <InfoAreaTry
+                title="Horaires"
+                description="Renseigner précisément vos besoins et disponibilités dans un calendrier partagé"
+                icon={EventAvailable}
+                iconColor="blue"
+                />
+              </Col>
+            </Row>
+          </BrowserView>
+          <MobileView>
+            <Progress type="circle" percent={75} strokeColor={'red'} width={180} />
+            <p className={classes.description} style={{marginTop: "20px"}}>
+              Selon une étude menée par Jengu sur plus de 300 étudiants en pharmacie, 75% d'entre eux ne connaissent pas de plateformes dédiées au recrutement en officine et désirerait en avoir une.
+            </p>
+                <InfoArea
+                title="Système de Matching"
+                description="Propositions d’annonces pertinentes basées sur vos critères"
+                icon={Done}
+                iconColor="success"
+                vertical
+                />
+                <InfoArea
+                title="Carte interactive"
+                description="Affichage en un clic/instant des offres proches de chez vous"
+                icon={Map}
+                iconColor="info"
+                vertical
+                />
+                <InfoArea
+                title="Horaires"
+                description="Renseigner précisément vos besoins et disponibilités dans un calendrier partagé"
+                icon={EventAvailable}
+                iconColor="blue"
+                vertical
+                />
+          </MobileView>
         </GridContainer>
       </div>
     </div>

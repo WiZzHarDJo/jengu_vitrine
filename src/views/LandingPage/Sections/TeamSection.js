@@ -16,9 +16,11 @@ import CardFooter from "components/Card/CardFooter.js";
 
 import styles from "assets/jss/material-kit-react/views/landingPageSections/teamStyle.js";
 
-import team1 from "assets/img/faces/avatar.jpg";
-import team2 from "assets/img/faces/christian.jpg";
+import hamza from "assets/img/hamza.jpg";
+import ying from "assets/img/Ying.jpg";
 import team3 from "assets/img/faces/kendall.jpg";
+import nicolas from "assets/img/nicolas.jpg";
+import joaquim from "assets/img/joaquim.jpg";
 
 const useStyles = makeStyles(styles);
 
@@ -40,19 +42,16 @@ export default function TeamSection() {
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                <img src={team1} alt="..." className={imageClasses} />
+                <img src={hamza} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
-                Hamza
+                Hamza Kalloua
                 <br />
-                <small className={classes.smallTitle}>Model</small>
+                <small className={classes.smallTitle}>Etudiant en 4ème année de Pharmacie à l'Université de Paris</small>
               </h4>
               <CardBody>
                 <p className={classes.description}>
-                  You can write here details about one of your team members. You
-                  can give more details about what they do. Feel free to add
-                  some <a href="#pablo">links</a> for people to be able to
-                  follow them outside the site.
+                Après de nombreuses années d'investissements associatif, Hamza se passionne pour le marketing et l'apport de solutions numériques aux problématiques actuelles du milieu pharmaceutique.
                 </p>
               </CardBody>
               <CardFooter className={classes.justifyCenter}>
@@ -69,10 +68,10 @@ export default function TeamSection() {
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                <img src={team2} alt="..." className={imageClasses} />
+                <img src={ying} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
-                Ying
+                Ying Van der Walsche
                 <br />
                 <small className={classes.smallTitle}>Designer</small>
               </h4>
@@ -130,7 +129,7 @@ export default function TeamSection() {
         <GridItem xs={12} sm={12} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                <img src={team3} alt="..." className={imageClasses} />
+                <img src={nicolas} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
                 Nicolas Berthelot
@@ -151,26 +150,23 @@ export default function TeamSection() {
                   color="transparent"
                   className={classes.margin5}
                 >
-                  <i className={classes.socials + " fab fa-linkedin"} />
+                  <a href="https://www.linkedin.com/in/nicolas-berthelot-4a0790171"><i className={classes.socials + " fab fa-linkedin"} /></a>
                 </Button>
               </CardFooter>
             </Card>
           </GridItem> <GridItem xs={12} sm={12} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                <img src={team3} alt="..." className={imageClasses} />
+                <img src={joaquim} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
                 Joaquim Giret-Imhaus
                 <br />
-                <small className={classes.smallTitle}>Model</small>
+                <small className={classes.smallTitle}>Etudiant en dernière année d'école d'ingénieur</small>
               </h4>
               <CardBody>
                 <p className={classes.description}>
-                  You can write here details about one of your team members. You
-                  can give more details about what they do. Feel free to add
-                  some <a href="#pablo">links</a> for people to be able to
-                  follow them outside the site.
+                Curieux de nature et passionné par les nouvelles technologies, Joaquim apporte son expérience technique afin de développer Jengu et ses fonctionnalités.
                 </p>
               </CardBody>
               <CardFooter className={classes.justifyCenter}>
@@ -179,7 +175,7 @@ export default function TeamSection() {
                   color="transparent"
                   className={classes.margin5}
                 >
-                  <i className={classes.socials + " fab fa-linkedin"} />
+                 <a href="https://www.linkedin.com/in/joaquim-giret-imhaus"><i className={classes.socials + " fab fa-linkedin"} /></a>
                 </Button>
               </CardFooter>
             </Card>

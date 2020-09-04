@@ -25,6 +25,7 @@ import styles from "assets/jss/material-kit-react/views/landingPage.js";
 import ProductSection from "./Sections/ProductSection.js";
 import TeamSection from "./Sections/TeamSection.js";
 import WorkSection from "./Sections/WorkSection.js";
+import AdvantageSection from "./Sections/AdvantageSection.js";
 
 const dashboardRoutes = [];
 
@@ -47,13 +48,13 @@ export default function LandingPage(props) {
         }}
         {...rest}
       />
-      <Parallax filter image={require("assets/img/pharma.jpg")}>
+      <Parallax filter image={require("assets/img/pharma3.webp")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
-              <h1 className={classes.title}>Le slogan du swag.</h1>
+              <h1 className={classes.title}>Jengu soigne vos recrutements.</h1>
               <h3>
-              Jengu, l’application qui vous accompagne dans le recrutement en officine.
+              Jengu est l’application qui vous accompagne dans le recrutement en officine.
               </h3>
             </GridItem>
           </GridContainer>
@@ -63,6 +64,7 @@ export default function LandingPage(props) {
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <ProductSection />
+          <AdvantageSection/>
           <TeamSection />
           <WorkSection />
         </div>
@@ -72,6 +74,7 @@ export default function LandingPage(props) {
         <div className={classNames(classes.main)}>
           <div className={classes.container}>
             <ProductSection />
+            <AdvantageSection/>
             <TeamSection />
             <WorkSection />
           </div>

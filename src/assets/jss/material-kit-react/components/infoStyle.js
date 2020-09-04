@@ -15,10 +15,22 @@ const infoStyle = {
     margin: "0 auto",
     padding: "0px"
   },
+  infoAreaTry: {
+    maxWidth: "360px",
+    margin: "0 auto",
+    padding: "0px",
+    display: "inline-flex",
+    justifyContent:"center"
+  },
   iconWrapper: {
     float: "left",
     marginTop: "24px",
     marginRight: "10px"
+  },
+  iconWrapperTry: {
+    float: "left",
+    marginTop: "50px",
+    marginRight: "30px"
   },
   primary: {
     color: primaryColor
