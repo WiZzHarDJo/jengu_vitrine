@@ -33,7 +33,7 @@ export default function ProductSection() {
           <h2 className={classes.title}>Le recrutement</h2>
         </GridItem>
         <h5 className={classes.description} style={{textAlign: "justify"}}>
-        Jengu gnagngagnaganngagagnagnagnnanagnagagangan
+        Jengu gnagnganganga
         </h5>
       </GridContainer>
       <div style={{marginTop:"30px"}}>
