@@ -32,9 +32,6 @@ export default function ProductSection() {
         <GridItem xs={12} sm={12} md={8}>
           <h2 className={classes.title}>Le recrutement</h2>
         </GridItem>
-        <h5 className={classes.description} style={{textAlign: "justify"}}>
-        Jengu gnagnganganga
-        </h5>
       </GridContainer>
       <div style={{marginTop:"30px"}}>
         <GridContainer justify="center">
@@ -46,27 +43,27 @@ export default function ProductSection() {
               gutter={10}
             >
               <Col span={12}>
-              <Progress type="circle" percent={75} strokeColor={'red'} width={180} />
+              <Progress type="circle" percent={75.4} strokeColor={'red'} width={180} />
               <p className={classes.description} style={{marginTop: "20px"}}>
-                Selon une étude menée par Jengu sur plus de 300 étudiants en pharmacie, 75% d'entre eux ne connaissent pas de plateformes dédiées au recrutement en officine et désirerait en avoir une.
+              Selon une étude menée par Jengu sur plus de 300 étudiants en pharmacie, 75,4% d'entre eux ne connaissent pas de plateformes dédiées au recrutement en officine et désirerait en utiliser une. Jengu en est la solution.
               </p>
               </Col>
               <Col span={12}>
                 <InfoAreaTry
-                title="Système de Matching"
-                description="Propositions d’annonces pertinentes basées sur vos critères"
+                title="Compatibilité"
+                description="Nous vous proposons des annonces ciblés et adaptés à votre profil"
                 icon={Done}
                 iconColor="success"
                 />
                 <InfoAreaTry
                 title="Carte interactive"
-                description="Affichage en un clic/instant des offres proches de chez vous"
+                description="Vous avez accès en un clic aux annonces près de chez vous"
                 icon={Map}
                 iconColor="info"
                 />
                 <InfoAreaTry
-                title="Horaires"
-                description="Renseigner précisément vos besoins et disponibilités dans un calendrier partagé"
+                title="Disponibilités"
+                description="Vous pouvez renseigner vos créneaux horaires via un calendrier partagé"
                 icon={EventAvailable}
                 iconColor="blue"
                 />
@@ -74,27 +71,27 @@ export default function ProductSection() {
             </Row>
           </BrowserView>
           <MobileView>
-            <Progress type="circle" percent={75} strokeColor={'red'} width={180} />
-            <p className={classes.description} style={{marginTop: "20px"}}>
-              Selon une étude menée par Jengu sur plus de 300 étudiants en pharmacie, 75% d'entre eux ne connaissent pas de plateformes dédiées au recrutement en officine et désirerait en avoir une.
+            <Progress type="circle" percent={75.4} strokeColor={'red'} width={180} />
+            <p className={classes.description} style={{marginTop: "20px", marginRight: "10px", marginLeft: "10px"}}>
+            Selon une étude menée par Jengu sur plus de 300 étudiants en pharmacie, 75,4% d'entre eux ne connaissent pas de plateformes dédiées au recrutement en officine et désirerait en utiliser une. Jengu en est la solution.
             </p>
                 <InfoArea
-                title="Système de Matching"
-                description="Propositions d’annonces pertinentes basées sur vos critères"
+                title="Compatibilité"
+                description="Nous vous proposons des annonces ciblés et adaptés à votre profil"
                 icon={Done}
                 iconColor="success"
                 vertical
                 />
                 <InfoArea
                 title="Carte interactive"
-                description="Affichage en un clic/instant des offres proches de chez vous"
+                description="Vous avez accès en un clic aux annonces près de chez vous"
                 icon={Map}
                 iconColor="info"
                 vertical
                 />
                 <InfoArea
-                title="Horaires"
-                description="Renseigner précisément vos besoins et disponibilités dans un calendrier partagé"
+                title="Disponibilités"
+                description="Vous pouvez renseigner vos créneaux horaires via un calendrier partagé"
                 icon={EventAvailable}
                 iconColor="blue"
                 vertical
