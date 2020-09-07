@@ -18,7 +18,7 @@ import styles from "assets/jss/material-kit-react/views/landingPageSections/team
 
 import hamza from "assets/img/hamza.jpg";
 import ying from "assets/img/Ying.jpg";
-import team3 from "assets/img/faces/kendall.jpg";
+import baptiste from "assets/img/baptiste1.jpg";
 import nicolas from "assets/img/nicolas.jpg";
 import joaquim from "assets/img/joaquim.jpg";
 
@@ -73,14 +73,11 @@ export default function TeamSection() {
               <h4 className={classes.cardTitle}>
                 Ying Van der Walsche
                 <br />
-                <small className={classes.smallTitle}>Designer</small>
+                <small className={classes.smallTitle}>Etudiante en 6ème année de Pharmacie à l'Université de Paris</small>
               </h4>
               <CardBody>
                 <p className={classes.description}>
-                  You can write here details about one of your team members. You
-                  can give more details about what they do. Feel free to add
-                  some <a href="#pablo">links</a> for people to be able to
-                  follow them outside the site.
+                Dotée d'une expérience riche et variée du milieu officinal, Ying se distingue par ses compétences en management développées, et les mets au service de Jengu pour proposer un soutien et une aide bienveillante constante aux besoins des étudiants et des pharmacies.
                 </p>
               </CardBody>
               <CardFooter className={classes.justifyCenter}>
@@ -97,19 +94,16 @@ export default function TeamSection() {
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                <img src={team3} alt="..." className={imageClasses} />
+                <img src={baptiste} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
                 Baptiste Rebiscoul
                 <br />
-                <small className={classes.smallTitle}>Model</small>
+                <small className={classes.smallTitle}>Etudiant en 4ème année de Pharmacie à l'Université de Paris</small>
               </h4>
               <CardBody>
                 <p className={classes.description}>
-                  You can write here details about one of your team members. You
-                  can give more details about what they do. Feel free to add
-                  some <a href="#pablo">links</a> for people to be able to
-                  follow them outside the site.
+                Fort d'un esprit pratique et d'une vision claire des besoins étudiants et officinaux, Baptiste apporte des solutions concrètes et novatrices, adaptées aux évolutions des pharmacies, grâce à son énergie motrice et son implication au quotidien pour Jengu.
                 </p>
               </CardBody>
               <CardFooter className={classes.justifyCenter}>
@@ -118,7 +112,7 @@ export default function TeamSection() {
                   color="transparent"
                   className={classes.margin5}
                 >
-                  <i className={classes.socials + " fab fa-linkedin"} />
+                  <a href="https://www.linkedin.com/in/baptiste-rebiscoul-de-hennezel-d-ormois-06aa18194"><i className={classes.socials + " fab fa-linkedin"} /></a>
                 </Button>
               </CardFooter>
             </Card>
@@ -134,14 +128,11 @@ export default function TeamSection() {
               <h4 className={classes.cardTitle}>
                 Nicolas Berthelot
                 <br />
-                <small className={classes.smallTitle}>Model</small>
+                <small className={classes.smallTitle}>Etudiant en dernière année d'école de commerce</small>
               </h4>
               <CardBody>
                 <p className={classes.description}>
-                  You can write here details about one of your team members. You
-                  can give more details about what they do. Feel free to add
-                  some <a href="#pablo">links</a> for people to be able to
-                  follow them outside the site.
+                  Amateur de défis, et riche de plusieurs années en alternance dans le secteur commercial, Nicolas concrétise Jengu avec une vision économique claire.
                 </p>
               </CardBody>
               <CardFooter className={classes.justifyCenter}>
